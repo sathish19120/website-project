@@ -3,21 +3,21 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                git branch: 'main', url: 'https://github.com/your-username/dynamic-website-project.git'
+                git branch: 'main', url: 'https://github.com/sathish19120/website-project.git'
             }
         }
         stage('Build Docker Image') {
             steps {
                 script {
-                    sh 'docker build -t dynamic-website .'
+                    sh 'docker build -t website-project .'
                 }
             }
         }
         stage('Push to DockerHub') {
             steps {
                 withDockerRegistry([credentialsId: 'dockerhub-creds', url: '']) {
-                    sh 'docker tag dynamic-website your-dockerhub-username/dynamic-website:latest'
-                    sh 'docker push your-dockerhub-username/dynamic-website:latest'
+                    sh 'docker tag website-project sathishsiddamsetty/website-project:latest'
+                    sh 'docker push sathishsiddamsetty/website-project:latest'
                 }
             }
         }
