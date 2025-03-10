@@ -7,3 +7,5 @@ Description: A detailed explanation of the project, its purpose, and what proble
 Technologies Used: List programming languages, frameworks, libraries, or tools.
 
 Script : Bash Shell
+
+IaC : Terraform 
