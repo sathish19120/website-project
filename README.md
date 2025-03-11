@@ -9,3 +9,7 @@ Technologies Used: List programming languages, frameworks, libraries, or tools.
 Script : Bash Shell
 
 IaC : Terraform 
+
+CI : Jenkins
+
+CD : Kubernetes
